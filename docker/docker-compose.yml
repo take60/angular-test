@@ -1,0 +1,13 @@
+version: '2.0'
+
+services:
+  node:
+    build: .
+    ports:
+      - "4200:4200"
+#    expose:
+#      - "4200"
+    volumes:
+      - "./projects:/projects"
+    tty: true
+
